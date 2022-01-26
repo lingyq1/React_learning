@@ -16,20 +16,6 @@ class App extends React.Component {
   }
 
   renderList = () => {
-    /// 方法1： 三元表达式
-    // return this.state.comments.length === 0 ? (
-    //   <div className="no-comment">暂无评论，快去评论吧~</div>
-    // ) : (
-    //   <ul>
-    //     {this.state.comments.map((item) => (
-    //       <li id={item.id}>
-    //         <h3>评论人:{item.userName}</h3>
-    //         <p>评论内容:{item.userContent}</p>
-    //       </li>
-    //     ))}
-    //   </ul>
-    // )
-
     // 方法2： if条件表达式
     if (this.state.comments.length === 0) {
       return <div className="no-comment">暂无评论，快去评论吧~</div>;
