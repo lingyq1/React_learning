@@ -129,8 +129,8 @@ class App extends React.Component{
   constructor(){
     super()
     this.state={
+      }
       this.addComment = this.addComment.bind(this)
-    }
   }
 
   addComment()=>{
